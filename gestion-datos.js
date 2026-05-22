@@ -11,7 +11,6 @@ const productos = [
 //Validación                            
 //------------------------------------------//
 productos.forEach(product => {
-    console.log("Validaciones")
     if(product.id > 0 && product.nombre && product.precio > 0){
         console.log (`Producto Valido: ${product.nombre}`)
     }else{
@@ -21,7 +20,7 @@ productos.forEach(product => {
 });
 
 //------------------------------------------//
-//Recorrer objeto for in                   
+//Recorrer objeto "for in"
 //------------------------------------------//
 
 console.log("LISTA PRODUCTOS");
@@ -85,12 +84,17 @@ for (const number of numbers){
 //------------------------------------------//
 // Pruebas
 //------------------------------------------//
-
+console.group("OBJETO")
 console.log("OBJETO COMPLETO");
 console.log(productos);
+console.groupEnd()
 
+console.group("SET")
 console.log("SET COMPLETO");
 console.log(numbers);
+console.groupEnd()
 
+console.group("MAP")
 console.log("MAP COMPLETO");
 console.log(myMap);
+console.groupEnd()
